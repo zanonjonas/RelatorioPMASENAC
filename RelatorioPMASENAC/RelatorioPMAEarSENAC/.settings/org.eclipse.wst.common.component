@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="RelatorioPMAEarSENAC">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="RelatorioPMAWebSENAC.war" deploy-path="/" handle="module:/resource/RelatorioPMAWebSENAC/RelatorioPMAWebSENAC">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="RelatoriosPMAEjbSENAC.jar" deploy-path="/" handle="module:/resource/RelatoriosPMAEjbSENAC/RelatoriosPMAEjbSENAC">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="RelatoriosPMAVOSENAC.jar" deploy-path="/lib" handle="module:/resource/RelatoriosPMAVOSENAC/RelatoriosPMAVOSENAC">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
