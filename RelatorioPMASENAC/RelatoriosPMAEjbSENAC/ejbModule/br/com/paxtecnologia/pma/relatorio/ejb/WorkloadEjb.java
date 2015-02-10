@@ -33,6 +33,7 @@ public class WorkloadEjb {
 	public List<DBSizeTabelaVO> getDBSizeTabela(String mesRelatorio, Integer metricaLinkId){
 		
 		List <DBSizeTabelaVO> retorno = workloadDao.getDBSizeTabela(mesRelatorio, metricaLinkId);
+		Collections.sort(retorno, new DBSizeTabelaVO());
 		
 		diferenca = Long.parseLong(retorno.get(1).getValor()) - Long.parseLong(retorno.get(0).getValor());
 		
@@ -42,7 +43,7 @@ public class WorkloadEjb {
 		}
 		
 		DBSizeTabelaVO dbSizeDif = new DBSizeTabelaVO();
-		dbSizeDif.setMes("Variação");
+		dbSizeDif.setData("Variação");
 		dbSizeDif.setValor(FormataValorUtil.humanReadableByteCount(diferenca, true));
 		retorno.add(dbSizeDif);
 		
