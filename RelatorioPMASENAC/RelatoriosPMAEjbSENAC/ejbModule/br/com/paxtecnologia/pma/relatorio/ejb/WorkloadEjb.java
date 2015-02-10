@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -266,6 +267,9 @@ public class WorkloadEjb {
 	private String formataTimeFramAnoDBSize(List<TimeFrameVO> timeFrameList) {
 		String saida = "[";
 		Iterator<TimeFrameVO> itTime = timeFrameList.iterator();
+		
+		Collections.sort(timeFrameList, new TimeFrameVO());
+		
 		//DecimalFormat df = new DecimalFormat("###");
 		while (itTime.hasNext()) {
 			TimeFrameVO timeFrame = itTime.next();

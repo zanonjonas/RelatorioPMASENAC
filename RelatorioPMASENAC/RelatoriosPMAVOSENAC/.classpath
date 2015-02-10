@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="/opt/eclipse_juno/javaee-api-5.0-2.jar"/>
 	<classpathentry kind="lib" path="/opt/eclipse_juno/jsf-api-2.1.10.jar"/>
 	<classpathentry kind="lib" path="/opt/eclipse_juno/jsf-impl-2.1.10.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RelatorioPMAWebSENAC"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RelatoriosPMAEjbSENAC"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
